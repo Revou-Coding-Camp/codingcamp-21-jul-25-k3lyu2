@@ -1,0 +1,114 @@
+body {
+    background: #181e2a;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;;
+}
+.container {
+    margin: 40px auto;
+    max-width: 500px;
+    background: #22263a;
+    border-radius: 14px;
+    box-shadow: 0 0 16px #111a;
+    padding: 32px 24px;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #c5c6ff;
+}
+.todo-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.todo-inputs input [type="text"]
+.todo-inputs input [type="text"] {
+    background: #191c28;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 14px;
+    font-size: 10rem;
+    width: 45%;
+}
+.todo-inputs button {
+    background: #747cff;
+    color: #fff;
+    border-radius: 7px;
+    padding: 0 18px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+.todo-inputs button:hover {
+    background: #636bfa;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+.actions button {
+    background: #323b56;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #15182a;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.todo-table th, .todo-table td {
+    padding: 10px;
+    text-align: center;
+}
+.todo-table th {
+    color: #b5b7da;
+    font-weight: 600;
+    background: #171b2a;
+}
+.no-task {
+    color: #b5b7da;
+    font-style: italic;
+    text-align: center;
+    padding: 24px 0;
+}
+.status-done {
+    color: #34d678;
+    font-weight: bold;
+}
+.status-pending {
+    color: #e7b94d;
+    font-weight: bold;
+}
+.action-btn {
+    background: #747cff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: background .2s;
+    font-size: .95rem;
+}
+.action-btn:hover {
+    background: #636bfa;
+}
+@media (max-width: 600px) {
+    .todo-inputs, .actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+}
